@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Mosógép Foglalási Rendszer</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav>
+        <ul class="menusor">
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="laundry.html" class="active">Táblázat (Mosógép)</a></li>
+            <li><a href="teszt.html">Táblázat (csomagok)</a></li>
+            <li><a href="chartJSmenü.html">Chart JS menü</a></li>
+            <li><a href="react.html">React alkalmazás</a></li>
+        </ul>
+    </nav>
+
+<main id="Laundry">
+    <h1>Mosógép Foglalási Rendszer</h1>
+
+    <!-- Dátumválasztó -->
+    <div>
+        <label>
+            Válassz napot:
+            <input type="date" id="datePicker">
+        </label>
+    </div>
+
+    <table id="scheduleTable">
+        <thead>
+            <tr>
+                <th>Időpont</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <!-- Foglalási űrlap -->
+    <div id="bookingForm" style="display:none; margin-top:20px;">
+        <h2 id="formTitle">Új Foglalás</h2>
+        <form id="form">
+            <label>
+                Szoba száma:
+                <input type="text" id="room" required>
+            </label>
+            <br><br>
+            <label>
+                Személy neve:
+                <input type="text" id="name" required>
+            </label>
+            <br><br>
+            <button type="submit" id="saveButton">Mentés</button>
+            <button type="button" onclick="cancelBooking()">Mégse</button>
+        </form>
+    </div>
+</main>
+
+<script src="laundry.js"></script>
+</body>
+</html>
