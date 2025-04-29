@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Táblázatos feladatok</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="menusor">
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="laundry.html">Táblázat (Mosógép)</a></li>
+            <li><a href="teszt.html" class="active">Táblázat (csomagok)</a></li>
+            <li><a href="chartJSmenü.html">Chart JS menü</a></li>
+            <li><a href="react.html">React alkalmazás</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Web-programozás-1 Előadás Házi feladat</h1>
+    </header>
+
+    <aside></aside>
+
+    <main id="content-tablets">
+        <div class="search">
+            <label for="search">Keresés a táblázatban</label>
+            <input type="text" name="search" id="szuro-mezo">
+        </div>
+
+        <table class="editableTable">
+            <thead>
+                <tr>
+                    <th colspan="4">Ingatlankezelő csomag</th>
+                </tr>
+
+            </thead>
+            <tr>
+                <th>Felismerhető problémák</th>
+                <td>Lakói panaszok</td>
+                <td>Karbantartások össze vissza szervezve</td>
+                <td>Papír alapú szerződések</td>
+            </tr>
+            <tr>
+                <th>Webes megoldás</th>
+                <td>Modern webes felület hibabejelentéssel</td>
+                <td>Karbantartáskezeléssel</td>
+                <td>Szerződés nyilvántartással</td>
+            </tr>
+            <tr>
+                <th>Előnyök</th>
+                <td>Kevesebb telefon és félreértés</td>
+                <td>Gyorsabb ügyintézés</td>
+                <td>Teljes rálátás bármikor, bárhonnan</td>
+            </tr>
+        </table>
+
+        <table class="editableTable">
+            <thead>
+
+                <tr >
+                    <th colspan="4">Raktárkezelő csomag</th>
+                </tr>
+            </thead>
+            <tr>
+                <th>Problémák</th>
+                <td>Hiányzó alkatrészek, túlzsúfolt polcok</td>
+                <td>Manuális hibák a leltárban</td>
+                <td>Rendszertelen ki- és betárolás</td>
+            </tr>
+            <tr>
+                <th>Megoldás</th>
+                <td>Valós idejű készletkezelés</td>
+                <td>Automatikus értesítések</td>
+                <td>Pontos mozgásrögzítés</td>
+            </tr>
+            <tr>
+                <th>Előnyök</th>
+                <td>Pontos leltár minden pillanatban</td>
+                <td>Jobb logisztika, kevesebb selejt</td>
+                <td>Átláthatóság és nyugalom a raktárban</td>
+            </tr>
+        </table>
+
+        <button onclick="saveToLocalStorage()">Mentés</button>
+
+    </main>
+
+
+    <footer>Mészáros Tibor Z21NS6, Becskeházi Facskó Edit Mária, CZU6N7</footer>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

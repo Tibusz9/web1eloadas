@@ -1,0 +1,233 @@
+/*index.html*/
+* {
+    box-sizing: border-box;
+}
+
+#content {
+    width: 300px;
+    height: 200px;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+h1 {
+    font-size: 2em;
+    color: #2c3e50;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+nav {
+    background-color: #34495e;
+    list-style-type: none;
+    margin: 0 10px;    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav.active {
+    background-color: #e74c3c;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.div-content {
+    flex: 3;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+aside {
+    flex: 1;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.menusor {
+    display: flex;
+}
+
+.menusor li {
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menusor a {
+    color: white;
+}
+
+.menusor a:hover {
+    color: red;
+}
+
+.active {
+    background-color: green;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/*teszt.html*/
+
+#content-tablets {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 10px auto;
+}
+
+.editableTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.editableTable th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#szuro-mezo {
+    width: 100%;
+}
+
+.search {
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+}
+
+.editableTable thead th {
+    text-align: center;
+}
+
+.editableTable th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.editableTable tr:hover {
+    background-color: #f5f5f5;
+}
+
+/*laundry.html*/
+
+#Laundry {
+    display: flex;
+    
+}
+
+#scheduleTable {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+}
+#scheduleTable th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+#scheduleTable th {
+    background-color: #f2f2f2;
+}
+button {
+    padding: 5px 10px;
+    margin: 2px;
+}
+
+/*chartJSmenü.html*/
+
+#adat-tablazat {
+  width: 500px;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+#adat-tablazat th,
+#adat-tablazat td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#adat-tablazat th {
+  background-color: #f0f0f0;
+}
+
+#adat-tablazat tbody tr:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+h2{
+  text-align: center;
+}
+#myChart {
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/*react.html*/
+
+#root{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#root nav {
+    background-color: #f8f8f8;
+    margin: 10px;
+}
+
+#szamlalo {
+    width: 1200px;
+}
+
+#szamlalo p {
+    font-size: 32px;
+}
+
+#root button {
+    font-size: 24px;
+}
